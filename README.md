@@ -1,1 +1,1 @@
-# mobile-internet-packages-Irancell
+# simple example for learn more about web scraping (dynamic site)
