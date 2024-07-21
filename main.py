@@ -4,24 +4,24 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 import re
 
-# instantiate options
+#? instantiate options
 options = webdriver.ChromeOptions()
 
-# run browser in headless mode
+#? run browser in headless mode
 options.headless = True
 
-# instantiate driver
+#? instantiate driver
 driver = webdriver.Chrome(
     service=ChromeService(ChromeDriverManager().install()), options=options
 )
 
-# load website
-url = "https://mrbilit.com/buses/isfahan_kaveh-yazd?departureDate=1403-01-17"
+#? load website
+url = "https://mrbilit.com/buses/isfahan_kaveh-yazd?departureDate=1403-04-31"
 
-# get the entire website content
+#? get the entire website content
 driver.get(url)
 
-# select elements by class name
+#? select elements by class name
 elements = driver.find_elements(By.CLASS_NAME, "route-section")
 
 txt = ""
